@@ -6,7 +6,9 @@ const root = document.getElementById("quiz-root");
 function renderFooter() {
   return `
     <div class="footer-copyright">
-      © 3-ій Центр рекрутингу ВМС ЗСУ, 2026 рік | <a href="https://recrutvms.mil.gov.ua/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms " target="_blank" rel="noopener">recrutvms.mil.gov.ua</a> — БІЛЬШЕ НІЖ МОРЕ
+      © 3-ій Центр рекрутингу ВМС ЗСУ, 2026 рік <br/>
+      <a href="https://recrutvms.mil.gov.ua/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms " target="_blank" rel="noopener">recrutvms.mil.gov.ua</a> 
+      — море професій, <span class="footer-moresee">БІЛЬШЕ НІЖ МОРЕ</span>
     </div>
   `;
 }

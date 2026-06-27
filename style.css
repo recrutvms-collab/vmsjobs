@@ -310,4 +310,6 @@ body {
   color: var(--accent-light);
 }
 
-
+.footer-moresee {
+  color: var(--text-main);
+}
