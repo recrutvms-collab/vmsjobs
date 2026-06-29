@@ -173,7 +173,8 @@ const questions = {
 
 const results = {
   crew_ship: {
-    jobUrl: "https://recrutvms.mil.gov.ua/positions?f%5B0%5D=military_branch%3A2&f%5B1%5D=military_branch%3A15&utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/crew_ship?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/employer/my/jobs/?region=all&type=1&userId=0&order=date&search=%D0%BF%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%BB%D0%B0%D0%B4",
     image: "images/crew_ship.png",
     title: "Екіпаж корабля / катера",
     category: "Бойові та операторські посади",
@@ -181,7 +182,8 @@ const results = {
   },
 
   combat_swimmer: {
-    jobUrl: "https://www.work.ua/jobs-%D0%B2%D0%BE%D0%B4%D0%BE%D0%BB%D0%B0%D0%B7/?company=2592946",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/combat_swimmer?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-%D0%B2%D0%BE%D0%B4%D0%BE%D0%BB%D0%B0%D0%B7/?company=2592946",
     image: "images/combat_swimmer.png",
     title: "Бойовий плавець (Спецпризначенець)",
     category: "Бойові та операторські посади",
@@ -189,7 +191,8 @@ const results = {
   },
 
   artillery_rocket: {
-    jobUrl: "https://recrutvms.mil.gov.ua/positions?f%5B0%5D=military_branch%3A17&utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/artillery_rocket?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/employer/my/jobs/?region=all&type=1&userId=0&order=date&search=%D0%BD%D0%B0%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA",
     image: "images/artillery_rocket.png",
     title: "Артилерист / Ракетник",
     category: "Бойові та операторські посади",
@@ -197,7 +200,8 @@ const results = {
   },
 
   marine: {
-    jobUrl: "https://recrutvms.mil.gov.ua/positions?f%5B0%5D=military_branch%3A14&utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/marine?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-%D1%81%D1%82%D1%80%D1%96%D0%BB%D0%B5%D1%86%D1%8C+%2B+%D1%81%D0%BD%D0%B0%D0%B9%D0%BF%D0%B5%D1%80/?company=2592946",
     image: "images/marine.png",
     title: "Морський піхотинець",
     category: "Бойові та операторські посади",
@@ -205,7 +209,8 @@ const results = {
   },
 
   medic: {
-    jobUrl: "https://www.work.ua/jobs-%D1%84%D0%B5%D0%BB%D1%8C%D0%B4%D1%88%D0%B5%D1%80+%D0%B0%D0%B1%D0%BE+%D0%BC%D0%B5%D0%B4%D0%B8%D0%BA/?company=2592946",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/medic?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-%D1%84%D0%B5%D0%BB%D1%8C%D0%B4%D1%88%D0%B5%D1%80+%D0%B0%D0%B1%D0%BE+%D0%BC%D0%B5%D0%B4%D0%B8%D0%BA/?company=2592946",
     image: "images/medic.png",
     title: "Військовий медик",
     category: "Забезпечення, логістика та управління",
@@ -213,7 +218,8 @@ const results = {
   },
 
   driver: {
-    jobUrl: "https://www.work.ua/jobs-%D0%B2%D0%BE%D0%B4%D1%96%D0%B9/?company=2592946",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/driver?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-%D0%B2%D0%BE%D0%B4%D1%96%D0%B9/?company=2592946",
     image: "images/driver.png",
     title: "Водій",
     category: "Забезпечення, логістика та управління",
@@ -221,7 +227,8 @@ const results = {
   },
 
   mechanic: {
-    jobUrl: "https://www.work.ua/jobs-%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D1%96%D0%BA/?company=2592946",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/mechanic?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D1%96%D0%BA/?company=2592946",
     image: "images/mechanic.png",
     title: "Механік / Ремонтник",
     category: "Технічні та ІТ-посади",
@@ -229,7 +236,8 @@ const results = {
   },
 
   engineer_sapper: {
-    jobUrl: "https://www.work.ua/jobs-%D1%81%D0%B0%D0%BF%D0%B5%D1%80/?company=2592946",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/engineer_sapper?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-%D1%81%D0%B0%D0%BF%D0%B5%D1%80/?company=2592946",
     image: "images/engineer_sapper.png",
     title: "Військовий інженер / Сапер",
     category: "Забезпечення, логістика та управління",
@@ -237,7 +245,8 @@ const results = {
   },
 
   drone_operator: {
-    jobUrl: "https://www.work.ua/jobs-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80/?company=2592946",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/drone_operator?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80/?company=2592946",
     image: "images/drone_operator.png",
     title: "Оператор безпілотних і роботизованих систем",
     category: "Бойові та операторські посади",
@@ -245,7 +254,8 @@ const results = {
   },
 
   signals_ew: {
-    jobUrl: "https://www.work.ua/jobs-telecommunications/?company=2592946",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/signals_ew?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-telecommunications/?company=2592946",
     image: "images/signals_ew.png",
     title: "Зв'язківець / Спеціаліст РЕБ та РЕР",
     category: "Технічні та ІТ-посади",
@@ -253,7 +263,8 @@ const results = {
   },
 
   uav_engineer: {
-    jobUrl: "https://www.work.ua/jobs-%D1%96%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80/?company=2592946",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/uav_engineer?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/jobs-%D1%96%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80/?company=2592946",
     image: "images/uav_engineer.png",
     title: "Інженер БПЛА та радіоелектроніки",
     category: "Технічні та ІТ-посади",
@@ -261,7 +272,8 @@ const results = {
   },
 
   developer: {
-    jobUrl: "https://recrutvms.mil.gov.ua/pages/pidrozdil-innovatsiy-vms/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/developer?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "",
     image: "images/developer.png",
     title: "Програміст / ІТ-розробник",
     category: "Технічні та ІТ-посади",
@@ -269,7 +281,8 @@ const results = {
   },
 
   cybersecurity: {
-    jobUrl: "https://recrutvms.mil.gov.ua/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/cybersecurity?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/employer/my/jobs/?region=all&type=1&userId=0&order=date&search=%D0%BA%D1%96%D0%B1%D0%B5%D1%80%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D0%BA%D0%B0",
     image: "images/cybersecurity.png",
     title: "Фахівець з кібербезпеки",
     category: "Технічні та ІТ-посади",
@@ -277,7 +290,8 @@ const results = {
   },
 
   press_officer: {
-    jobUrl: "https://recrutvms.mil.gov.ua/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/press_officer?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "",
     image: "images/press_officer.png",
     title: "Фахівець з комунікацій / Фото-репортер",
     category: "Комунікації та морально-психологічне забезпечення",
@@ -285,7 +299,8 @@ const results = {
   },
 
   psychologist_chaplain: {
-    jobUrl: "https://recrutvms.mil.gov.ua/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/psychologist_chaplain?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "",
     image: "images/psychologist_chaplain.png",
     title: "Військовий психолог / Капелан",
     category: "Комунікації та морально-психологічне забезпечення",
@@ -293,7 +308,8 @@ const results = {
   },
 
   staff_clerk: {
-    jobUrl: "https://recrutvms.mil.gov.ua/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/staff_clerk?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "",
     image: "images/staff_clerk.png",
     title: "Діловод / Штабний фахівець",
     category: "Забезпечення, логістика та управління",
@@ -301,7 +317,8 @@ const results = {
   },
 
   logistics: {
-    jobUrl: "https://recrutvms.mil.gov.ua/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrl: "https://recrutvms.mil.gov.ua/qz/logistics?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
+    jobUrlWork: "https://www.work.ua/employer/my/jobs/?region=all&type=1&userId=0&order=date&search=%D0%B1%D0%B0%D1%82%D0%B0%D0%BB%D0%B5%D1%80",
     image: "images/logistics.png",
     title: "Логіст / Постачальник",
     category: "Забезпечення, логістика та управління",

@@ -25,13 +25,27 @@ body {
   padding: 16px;
 }
 
+.page-wrap {
+  width: 100%;
+  max-width: 600px;
+}
+
+.page-header {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 16px;
+}
+
 #quiz-root {
   width: 100%;
   max-width: 600px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 36px 32px;
+  padding: 0 36px 32px 36px;
   box-shadow: 0 4px 24px rgba(20, 32, 29, 0.06);
 }
 

@@ -3,6 +3,12 @@ let history = [];
 
 const root = document.getElementById("quiz-root");
 
+function renderHeader() {
+  return `
+   <img class="page-header" src="images/logo.png" alt="">
+  `;
+}
+
 function renderFooter() {
   return `
     <div class="footer-copyright">
@@ -15,6 +21,7 @@ function renderFooter() {
 
 function renderStart() {
   root.innerHTML = `
+    ${renderHeader()}
     <img class="step-image start-image" src="${startScreen.image}" alt="">
     <div class="start-screen">
       <h1 class="start-title">${startScreen.title}</h1>
@@ -52,6 +59,7 @@ function renderQuestion(id) {
   const q = questions[id];
 
   root.innerHTML = `
+    ${renderHeader()}
     ${renderProgress(q.depth)}
     <h2 class="question-text">${q.text}</h2>
     <div class="options">
@@ -78,7 +86,8 @@ function renderQuestion(id) {
 function renderResult(id) {
   const r = results[id];
 
-  root.innerHTML = `
+  root.innerHTML = `  
+    ${renderHeader()}
     ${renderProgress(TOTAL_STEPS)}
     <div class="result-card">
       <img class="step-image" src="${r.image}" alt="">
