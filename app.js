@@ -96,17 +96,32 @@ function renderResult(id) {
       <p class="result-description">${r.description}</p>
     </div>
     ${renderBackButton()}
-    <a class="btn-jobs" href="${r.jobUrl}" target="_blank" rel="noopener">
-      <span class="btn-jobs-label">Переглянути вакансії в Центрі рекрутингу ВМС</span>
-      <span class="spark" style="--angle:0deg"></span>
-      <span class="spark" style="--angle:45deg"></span>
-      <span class="spark" style="--angle:90deg"></span>
-      <span class="spark" style="--angle:135deg"></span>
-      <span class="spark" style="--angle:180deg"></span>
-      <span class="spark" style="--angle:225deg"></span>
-      <span class="spark" style="--angle:270deg"></span>
-      <span class="spark" style="--angle:315deg"></span>
-    </a>
+
+    <div class="btn-job-group">
+      <a class="btn-job btn-job-left" href="${r.jobUrl}" target="_blank" rel="noopener">
+        <span class="btn-jobs-label">Центр рекрутингу ВМС</span>
+        <span class="spark" style="--angle:0deg"></span>
+        <span class="spark" style="--angle:45deg"></span>
+        <span class="spark" style="--angle:90deg"></span>
+        <span class="spark" style="--angle:135deg"></span>
+        <span class="spark" style="--angle:180deg"></span>
+        <span class="spark" style="--angle:225deg"></span>
+        <span class="spark" style="--angle:270deg"></span>
+        <span class="spark" style="--angle:315deg"></span>
+      </a>
+      <a class="btn-job btn-job-right" href="${r.jobUrlWork}" target="_blank" rel="noopener">
+        <span class="btn-jobs-label">Work.ua</span>
+        <span class="spark" style="--angle:0deg"></span>
+        <span class="spark" style="--angle:45deg"></span>
+        <span class="spark" style="--angle:90deg"></span>
+        <span class="spark" style="--angle:135deg"></span>
+        <span class="spark" style="--angle:180deg"></span>
+        <span class="spark" style="--angle:225deg"></span>
+        <span class="spark" style="--angle:270deg"></span>
+        <span class="spark" style="--angle:315deg"></span>
+      </a>
+    </div>
+
     <button class="btn-restart" id="restart-btn">Почати знову</button>
     ${renderFooter()}
   `;
