@@ -123,22 +123,6 @@ body {
   background: var(--bg-page);
 }
 
-.btn-back {
-  margin-top: 24px;
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 8px 0;
-}
-
-.btn-back:hover,
-.btn-back:focus-visible {
-  color: var(--accent-dark);
-}
-
 .result-card {
   margin-bottom: 8px;
 }
@@ -167,8 +151,37 @@ body {
   margin: 0;
 }
 
+.result-actions-row {
+  display: flex;
+  align-items: center;
+}
+
+.btn-back, 
 .btn-restart {
-  margin-top: 28px;
+  margin-top: 24px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.result-actions-row .btn-restart {
+  margin-left: auto;
+}
+
+.btn-back:hover,
+.btn-back:focus-visible,
+.btn-restart:hover,
+.btn-restart:focus-visible  {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.btn-start {
+  margin-top: 16px;
   width: 100%;
   background: var(--bg-card);
   border: 1px solid var(--accent);
@@ -179,13 +192,16 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: background 0.2s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.btn-restart:hover,
-.btn-restart:focus-visible {
+.btn-start:hover,
+.btn-start:focus-visible {
   background: var(--accent);
-  color: var(--text-main);
+  color: #ffffff;
 }
+
 
 .btn-jobs {
   display: block;
@@ -290,7 +306,9 @@ Sparks
 .btn-jobs:hover .spark,
 .btn-jobs:focus-visible .spark,
 .btn-job:hover .spark,
-.btn-job:focus-visible .spark {
+.btn-job:focus-visible .spark,
+.btn-start:hover .spark,
+.btn-start:focus-visible .spark {
   animation: spark-fly 0.6s ease-out forwards;
 }
 
@@ -298,7 +316,9 @@ Sparks
   .btn-jobs:hover .spark,
   .btn-jobs:focus-visible .spark,
   .btn-job:hover .spark,
-  .btn-job:focus-visible .spark {
+  .btn-job:focus-visible .spark,
+  .btn-start:hover .spark,
+  .btn-start:focus-visible .spark {
     animation: none;
   }
 }
@@ -432,4 +452,8 @@ Sparks
 
 .footer-moresee {
   color: var(--text-main);
+}
+
+.result-text {
+  text-align: center;
 }

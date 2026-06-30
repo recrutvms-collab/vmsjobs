@@ -12,9 +12,9 @@ function renderHeader() {
 function renderFooter() {
   return `
     <div class="footer-copyright">
-      © 3-ій Центр рекрутингу ВМС ЗСУ, 2026 рік <br/>
+      © Третій Центр рекрутингу ВМС ЗСУ, 2026 рік <br/>
       <a href="https://recrutvms.mil.gov.ua/?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms " target="_blank" rel="noopener">recrutvms.mil.gov.ua</a> 
-      — море професій, <span class="footer-moresee">БІЛЬШЕ НІЖ МОРЕ</span>
+      — Більше, ніж море
     </div>
   `;
 }
@@ -27,7 +27,17 @@ function renderStart() {
       <h1 class="start-title">${startScreen.title}</h1>
       <p class="start-subtitle">${startScreen.subtitle}</p>
       <p class="start-body">${startScreen.body.split("\n\n").map(p => `<span>${p}</span>`).join("")}</p>
-      <button class="btn-restart" id="start-btn">${startScreen.cta}</button>
+      <button class="btn-start" id="start-btn">
+        <span class="btn-start-label">${startScreen.cta}</span>
+        <span class="spark" style="--angle:0deg"></span>
+        <span class="spark" style="--angle:45deg"></span>
+        <span class="spark" style="--angle:90deg"></span>
+        <span class="spark" style="--angle:135deg"></span>
+        <span class="spark" style="--angle:180deg"></span>
+        <span class="spark" style="--angle:225deg"></span>
+        <span class="spark" style="--angle:270deg"></span>
+        <span class="spark" style="--angle:315deg"></span>
+      </button>
       <div class="start-note">${startScreen.ctaNote}</div>
     </div>
     ${renderFooter()}
@@ -95,8 +105,9 @@ function renderResult(id) {
       <h2 class="result-title">${r.title}</h2>
       <p class="result-description">${r.description}</p>
     </div>
-    ${renderBackButton()}
-
+    <div class="result-text">
+      <p>Переглянути вакансії:</p>
+    </div>
     <div class="btn-job-group">
       <a class="btn-job btn-job-left" href="${r.jobUrl}" target="_blank" rel="noopener">
         <span class="btn-jobs-label">Центр рекрутингу ВМС</span>
@@ -121,8 +132,10 @@ function renderResult(id) {
         <span class="spark" style="--angle:315deg"></span>
       </a>
     </div>
-
+    <div class="result-actions-row">
+    ${renderBackButton()}
     <button class="btn-restart" id="restart-btn">Почати знову</button>
+    </div>
     ${renderFooter()}
   `;
 
