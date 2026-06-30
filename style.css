@@ -36,7 +36,6 @@ body {
   max-width: 600px;
   height: auto;
   border-radius: 16px 16px 0 0;
-  margin-bottom: 16px;
 }
 
 #quiz-root {
@@ -173,11 +172,19 @@ body {
 }
 
 .btn-back:hover,
-.btn-back:focus-visible,
-.btn-restart:hover,
-.btn-restart:focus-visible  {
+.btn-back:focus-visible {
   color: var(--accent-dark);
-  font-weight: 700;
+  cursor: pointer;
+  padding-left: 10px;
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+
+.btn-restart:hover,
+.btn-restart:focus-visible {
+  color: var(--accent-dark);
+  cursor: pointer;
+  padding-right: 10px;
+  transition: color 0.15s ease, padding-right 0.15s ease;
 }
 
 .btn-start {
@@ -456,4 +463,5 @@ Sparks
 
 .result-text {
   text-align: center;
+  font-weight:  700;
 }
