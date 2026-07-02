@@ -45,6 +45,9 @@ function renderStart() {
 
   document.getElementById("start-btn").addEventListener("click", () => {
     history = [];
+    gtag('event', 'quiz_start', {
+      project_name: 'vmsjobs'
+    });
     renderQuestion("Q1");
   });
 }
@@ -84,6 +87,11 @@ function renderQuestion(id) {
   document.querySelectorAll(".option-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       history.push(currentId);
+      gtag('event', 'quiz_answer', {
+        project_name: 'vmsjobs',
+        question_id: currentId,
+        answer_next: next
+      });
       const next = btn.dataset.next;
       goTo(next);
     });
@@ -95,6 +103,12 @@ function renderQuestion(id) {
 
 function renderResult(id) {
   const r = results[id];
+
+  gtag('event', 'quiz_complete', {
+    project_name: 'vmsjobs',
+    result_id: id,
+    result_title: r.title
+  });
 
   root.innerHTML = `  
     ${renderHeader()}
@@ -109,7 +123,8 @@ function renderResult(id) {
       <p>Переглянути вакансії:</p>
     </div>
     <div class="btn-job-group">
-      <a class="btn-job btn-job-left" href="${r.jobUrl}" target="_blank" rel="noopener">
+      <a class="btn-job btn-job-left" href="${r.jobUrl}" target="_blank" rel="noopener" 
+          onclick="gtag('event','jobs_click',{project_name:'vmsjobs',result_id:'${id}',destination:'recrutvms'})">
         <span class="btn-jobs-label">Центр рекрутингу ВМС</span>
         <span class="spark" style="--angle:0deg"></span>
         <span class="spark" style="--angle:45deg"></span>
@@ -120,7 +135,8 @@ function renderResult(id) {
         <span class="spark" style="--angle:270deg"></span>
         <span class="spark" style="--angle:315deg"></span>
       </a>
-      <a class="btn-job btn-job-right" href="${r.jobUrlWork}" target="_blank" rel="noopener">
+      <a class="btn-job btn-job-right" href="${r.jobUrlWork}" target="_blank" rel="noopener"
+          onclick="gtag('event','jobs_click',{project_name:'vmsjobs',result_id:'${id}',destination:'work_ua'})">
         <span class="btn-jobs-label">Work.ua</span>
         <span class="spark" style="--angle:0deg"></span>
         <span class="spark" style="--angle:45deg"></span>

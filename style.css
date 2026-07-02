@@ -105,6 +105,7 @@ body {
   line-height: 1.4;
   cursor: pointer;
   transition: color 0.15s ease, padding-left 0.15s ease;
+  min-height: 5em;
 }
 
 .options .option-btn:last-child {

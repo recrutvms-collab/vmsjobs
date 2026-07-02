@@ -273,7 +273,7 @@ const results = {
 
   developer: {
     jobUrl: "https://recrutvms.mil.gov.ua/qz/developer?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
-    jobUrlWork: "",
+    jobUrlWork: "https://www.work.ua/jobs-it-%D1%84%D0%B0%D1%85%D1%96%D0%B2%D0%B5%D1%86%D1%8C/?company=2592946",
     image: "images/developer.png",
     title: "Програміст / ІТ-розробник",
     category: "Технічні та ІТ-посади",
@@ -291,7 +291,7 @@ const results = {
 
   press_officer: {
     jobUrl: "https://recrutvms.mil.gov.ua/qz/press_officer?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
-    jobUrlWork: "",
+    jobUrlWork: "https://www.work.ua/jobs-%D1%84%D0%B0%D1%85%D1%96%D0%B2%D0%B5%D1%86%D1%8C+%D0%B7+%D0%BA%D0%BE%D0%BC%D1%83%D0%BD%D1%96%D0%BA%D0%B0%D1%86%D1%96%D0%B9/?company=2592946",
     image: "images/press_officer.png",
     title: "Фахівець з комунікацій / Фото-репортер",
     category: "Комунікації та морально-психологічне забезпечення",
@@ -300,7 +300,7 @@ const results = {
 
   psychologist_chaplain: {
     jobUrl: "https://recrutvms.mil.gov.ua/qz/psychologist_chaplain?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
-    jobUrlWork: "",
+    jobUrlWork: "https://www.work.ua/jobs-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0%20%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%BA%D0%B0/?company=2592946",
     image: "images/psychologist_chaplain.png",
     title: "Військовий психолог / Капелан",
     category: "Комунікації та морально-психологічне забезпечення",
@@ -309,7 +309,7 @@ const results = {
 
   staff_clerk: {
     jobUrl: "https://recrutvms.mil.gov.ua/qz/staff_clerk?utm_source=quiz&utm_medium=referral&utm_campaign=quiz_vms",
-    jobUrlWork: "",
+    jobUrlWork: "https://www.work.ua/jobs-%D1%88%D1%82%D0%B0%D0%B1%D0%BD%D0%B8%D0%B9+%D1%84%D0%B0%D1%85%D1%96%D0%B2%D0%B5%D1%86%D1%8C/?company=2592946",
     image: "images/staff_clerk.png",
     title: "Діловод / Штабний фахівець",
     category: "Забезпечення, логістика та управління",
